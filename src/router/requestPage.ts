@@ -2,6 +2,7 @@ const request = require("request");
 const cheerio = require("cheerio");
 import ProgressBar from "../utils/ProgressBar";
 
+// 配置头部
 var header = {
   Connection: "keep-alive",
   "content-type": "application/json",
