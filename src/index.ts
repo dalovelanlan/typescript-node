@@ -17,9 +17,9 @@ const main = async () => {
       https://www.amazon.co.uk/dp/B07VBY3KSV`;
   const urlData = url.split(/\s+/);
 
-  const array = [];
-  var num = 0,
-    total = urlData.length;
+  const array: any[] = [];
+  var num: number = 0,
+    total: number = urlData.length;
   console.log("开始执行.......");
   time("执行时间");
   for (const url of urlData) {
