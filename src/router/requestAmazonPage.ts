@@ -54,7 +54,6 @@ const requestPage = (page: string, number?: number, total?: number) => {
 router.get(
   '/requestAmazonPage',
   async (req: RequestWithBody, res: Response) => {
-    console.log(req?.query)
     const url = req?.body?.url
     if (!url) return res.send('请输入url')
     const urlData = url.split(/\s+/)
